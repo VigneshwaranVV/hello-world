@@ -22,11 +22,14 @@ public class ProductServiceimpl implements ProductService{
 		List<ProductModel> a=productDAO.getProductList();
 		System.out.println(a);
 		return a;
-	
 	}
-	
 	public void update(ProductModel p) {
 		// TODO Auto-generated method stub
+		productDAO.updateProductModel(p);
 		
+	}
+	public void remove(Integer id) {
+		// TODO Auto-generated method stub
+		productDAO.remove( id);
 	}
 }

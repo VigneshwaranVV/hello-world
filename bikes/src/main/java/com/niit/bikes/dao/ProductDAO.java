@@ -10,4 +10,8 @@ public interface ProductDAO {
 
 	List<ProductModel> getProductList();
 
+	void updateProductModel(ProductModel p);
+
+	void remove(Integer id);
+
 }

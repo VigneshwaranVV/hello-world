@@ -22,15 +22,11 @@
       <a class="navbar-brand" href="#">RACING BIKES</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="index">Home</a></li>
+       <li><a href="guest">PRODUCTS</a></li>
       <li><a href="login">LOGIN</a></li>
       <li><a href="signup">SIGNUP</a></li>
-      <li><a href="category">category</a></li>
-       <li><a href="viewcategory">category</a></li>
-      <li><a href="supplier">supplier</a></li>
-       <li><a href="viewsupplier">supplier</a></li>
-       <li><a href="product">product</a></li>
-     <li><a href="viewproduct">product</a></li>
+     
     </ul>
   </div>
 </nav>
@@ -50,15 +46,15 @@
     <div class="carousel-inner" role="listbox">
       
       <div class="item active">
-        <img src="resources/images/111.jpg" width="460" height="345"/>
+        <img src="resources/images/1212.jpg" width="460" height="345"/>
       </div>
 
       <div class="item">
-        <img src="resources/images/111.jpg" width="460" height="345"/>
+        <img src="resources/images/1313.jpg" width="460" height="345"/>
       </div>
     
       <div class="item">
-        <img src="resources/images/333.jpg" width="460" height="345"/>
+        <img src="resources/images/1313.jpg" width="460" height="345"/>
       </div>
 
     </div>
@@ -79,12 +75,12 @@
   
   <div class="row">
     <div class="col-md-4">
-      <a href="resources/images/1214.jpg" class="thumbnail">
+      <a href="resources/images/1212.jpg" class="thumbnail">
         <img src="webapp/resources/images/1214.jpg" style="width:250px;height:350px">
       </a>
     </div>
     <div class="col-md-4">
-      <a href="resources/images/1314.jpg" class="thumbnail">
+      <a href="resources/images/1313.jpg" class="thumbnail">
         <img src="resources/images/1314.jpg" style="width:250px;height:350px">
       </a>
     </div>
@@ -95,9 +91,4 @@
     </div>
   </div>
 </div>
-
-</body>
-
-  
-
-</html>
+<%@include file="/WEB-INF/views/footer.jsp/" %>

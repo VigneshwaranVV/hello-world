@@ -21,7 +21,7 @@
 <body>
   <div>
 
-<h2><p style="float:left;">List Of Categories!</p></h2>
+<h2><p style="float:left;">List Of Suppliers!</p></h2>
     	
  <p style="text-align: justify;">
   		<div ng-app="myApp" ng-controller="namesCtrl">
@@ -31,18 +31,16 @@
 		
 	</form>
 	<table class="table table-striped">
-	<tr>
-	    <th>ID</th>		
+	<tr>		
 		<th>NAME</th>
-		<th>SIZE</th>
-		<th>PRICE</th>
-		<th>ACTION</th>
+		<th>ID</th>
+		<th>PHONENO</th>
+		<th>CART</th>
 	</tr>
 	<tr ng-repeat="resource in names | filter:search">		
-		<td>{{ resource.categoryid}}</td>
-		<td>{{ resource.categoryname}}</td>
-		<td>{{ resource.categorysize }}</td>
-		<td>{{ resource.categoryprice}}</td> <td align="center"><a href="editcategory/{{resource.categoryid}}">Edit</a> | <a href="delcategory1/{{resource.categoryid}}">Delete</a></td>
+		<td>{{ resource.suppliername}}</td>
+		<td>{{ resource.supplierid}}</td>
+		<td>{{ resource.supplierphoneno }}</td> <td align="center">add to cart</td>
    	</tr>
 	</table>    
 	<script>

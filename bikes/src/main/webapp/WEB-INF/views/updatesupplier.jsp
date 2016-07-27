@@ -23,7 +23,7 @@
         <td><form:input path="supplierphoneno" /></td>
     </tr>
     <tr>
-        <td colspan="2"><input type="submit" value="update"></td>
+        <td colspan="2"><input type="submit" value="Enter"></td>
     </tr>
 </table>
 </form:form>

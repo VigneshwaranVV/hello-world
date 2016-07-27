@@ -36,13 +36,13 @@
 		<th>NAME</th>
 		<th>SIZE</th>
 		<th>PRICE</th>
-		<th>ACTION</th>
+		<th>CART</th>
 	</tr>
 	<tr ng-repeat="resource in names | filter:search">		
 		<td>{{ resource.categoryid}}</td>
 		<td>{{ resource.categoryname}}</td>
 		<td>{{ resource.categorysize }}</td>
-		<td>{{ resource.categoryprice}}</td> <td align="center"><a href="editcategory/{{resource.categoryid}}">Edit</a> | <a href="delcategory1/{{resource.categoryid}}">Delete</a></td>
+		<td>{{ resource.categoryprice}}</td> <td align="center">add to cart</td>
    	</tr>
 	</table>    
 	<script>

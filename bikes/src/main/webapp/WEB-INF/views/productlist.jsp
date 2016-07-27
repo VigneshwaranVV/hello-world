@@ -5,7 +5,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
- <title>Kids Toys</title>
+ <title>bikes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -42,7 +42,7 @@
 		<td>{{ resource.productid}}</td>
 		<td>{{ resource.productname}}</td>
 		<td>{{ resource.productsize}}</td>
-		<td>{{ resource.productprice}}</td> <td align="center"><a href="edit/{{resource.productid}}">Edit</a> | <a href="product1/{{resource.productid}}">Delete</a></td>
+		<td>{{ resource.productprice}}</td> <td align="center"><a href="edit/{{resource.productid}}">Edit</a> | <a href="delproduct1/{{resource.productid}}">Delete</a></td>
    	</tr>
 	</table>    
 	<script>

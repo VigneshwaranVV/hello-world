@@ -1,8 +1,5 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<html>
-<head>
-<title>Category Page</title>
-</head>
+<%@include file="/WEB-INF/views/header.jsp" %>
 <body>
 
 <form:form method="POST" action="./addcategory">
@@ -34,6 +31,4 @@
     </tr>
 </table>
 </form:form>
-
-</body>
-</html>
+<%@include file="/WEB-INF/views/footer.jsp"  %>

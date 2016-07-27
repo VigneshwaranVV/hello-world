@@ -5,7 +5,7 @@
 <%@ page isELIgnored="false" %>
 <html>
 <head>
- <title>Kids Toys</title>
+ <title>bikes</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -40,7 +40,7 @@
 	<tr ng-repeat="resource in names | filter:search">		
 		<td>{{ resource.suppliername}}</td>
 		<td>{{ resource.supplierid}}</td>
-		<td>{{ resource.supplierphoneno }}</td> <td align="center"><a href="editsupplier/{{resource.supplierid}}">Edit</a> | <a href="supplier1/{{resource.supplierid}}">Delete</a></td>
+		<td>{{ resource.supplierphoneno }}</td> <td align="center"><a href="editsupplier/{{resource.supplierid}}">Edit</a> | <a href="delsupplier1/{{resource.supplierid}}">Delete</a></td>
    	</tr>
 	</table>    
 	<script>

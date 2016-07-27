@@ -15,6 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.niit.bikes.model.ProductModel;
 
 
+
 @Repository
 public class ProductDAOimpl implements ProductDAO{
 
@@ -29,30 +30,47 @@ public class ProductDAOimpl implements ProductDAO{
 			t.commit();
 
 }
-			@SuppressWarnings("unchecked")
-			@Transactional(propagation=Propagation.SUPPORTS)
-			public List<ProductModel> getProductList()// method of ProductDAOInt defined
+	    @SuppressWarnings("unchecked")
+		@Transactional(propagation=Propagation.SUPPORTS)
+		public List<ProductModel> getProductList() {
+			// TODO Auto-generated method stub
+	    	System.out.println("-----------  "+sessionFactory);
+			Session s=sessionFactory.openSession();
+			Transaction t = s.beginTransaction();
+			System.out.println("In dao ");
+			List<ProductModel> al=new ArrayList<ProductModel>();
+					 al=s.createQuery("from ProductModel").list();
+			 t.commit();
+			 return al;
+		}
+	   
+		public void updateProductModel(ProductModel p) {
+			System.out.println("In update product");
+			Session s=sessionFactory.openSession();
+			Transaction t = s.beginTransaction();
+			ProductModel p1=(ProductModel)s.load(ProductModel.class,p.getProductid());
+			if(p1!=null)
 			{
-				System.out.println("-----------  "+sessionFactory);
-				Session s=sessionFactory.openSession();
-				Transaction t = s.beginTransaction();
-				System.out.println("In dao ");
-				List<ProductModel> al=new ArrayList<ProductModel>();
-						 al=s.createQuery("from ProductModel").list();
-				 t.commit();
-				 return al;
-			}  
-			public void update(ProductModel p){
-				System.out.println("In update product");
-				Session s=sessionFactory.openSession();
-				Transaction t = s.beginTransaction();
-				ProductModel p1=(ProductModel)s.load(ProductModel.class,p.getProductid());
-				if(p1!=null)
-				{
-					System.out.println("****inif");
-					s.update(p);
-				}
-				t.commit();
-				}
+				System.out.println("****inif");
+				s.update(p);
+			}
+			t.commit();
+			}
+		public void remove(Integer id) {
+			// TODO Auto-generated method stub
+			System.out.println("in product delete");
+			
+			Session s=sessionFactory.openSession();
+			Transaction t=s.beginTransaction();
+			ProductModel p=(ProductModel)s.load(ProductModel.class,new Integer(id));
+			if(p!=null)
+			{
+				s.delete(p);
+			}
+			t.commit();
+		}
+	
+		}
+			
+		
 
-}

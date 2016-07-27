@@ -1,8 +1,5 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<html>
-<head>
-<title>Category Page</title>
-</head>
+<%@include file="/WEB-INF/views/header.jsp" %>
 <body>
 
 <form:form method="POST" action="./updatecategory">
@@ -30,7 +27,7 @@
 
    
     <tr>
-        <td colspan="2"><input type="submit" value="update"></td>
+        <td colspan="2"><input type="submit" value="Enter"></td>
     </tr>
 </table>
 </form:form>

@@ -5,8 +5,13 @@ import java.util.List;
 import com.niit.bikes.model.CategoryModel;
 
 public interface CategoryService {
-	public void insertCategoryModel(CategoryModel u);
+
+	void insertCategoryModel(CategoryModel u);
+
 	List<CategoryModel> getCategoryList();
-	void update(CategoryModel c);
+
+	void update(CategoryModel l);
+
+	void remove(Integer id);
 
 }

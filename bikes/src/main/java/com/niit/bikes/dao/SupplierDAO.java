@@ -10,6 +10,8 @@ public interface SupplierDAO {
 
 	List<SupplierModel> getSupplierList();
 
-	void update(SupplierModel s);
+	void updateSupplierModel(SupplierModel k);
+
+	void remove(Integer id);
 
 }
