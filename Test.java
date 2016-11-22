@@ -3,6 +3,7 @@ import com.niit.shoppingcard.bean.*;
 public class Test {
 	public static void main(String args[])
 	{
+//viki
 		Product product = new Product();
 		product.setId(101);
 		product.setName("mobile");
